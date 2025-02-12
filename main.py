@@ -156,7 +156,7 @@ def create_item(name, icon, keyword, description, on_enter):
 
 def sort_by_usage(i):
     global usage_cache
-    base = os.path.basename(i._keyword)
+    base = os.path.basename(i.keyword)
     j = os.path.splitext(base)[0]
     # Return score according to usage
     if j in usage_cache:
