@@ -141,7 +141,7 @@ class ItemEnterEventListener(EventListener):
                 remmina_bin, shlex.quote(on_enter)
             ),
             None,
-        ).run()
+        )
 
 
 def create_item(name, icon, keyword, description, on_enter):
